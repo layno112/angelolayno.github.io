@@ -1,1 +1,73 @@
-Hello World
+<html>
+
+<head>
+    <title>New Site</title>
+    <link rel="stylesheet" href="New_site.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <header>
+        <h1>Blog Post</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#Home">Home</a></li> <!-- # is id so if you click this it will move you to that section-->
+            <li><a href="#About">About</a></li>
+            <li><a href="#Contact">Contact</a></li>
+            <li><a href="#Posts">Posts</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="Home">
+            <h2>Home</h2>
+            <p>This is the home section</p>
+            <button id="home_btn">Click me</button>
+        </section>
+        <section id="About">
+            <h2>About</h2>
+            <p>Info about me</p>
+        </section>
+        <section id="Contact">
+            <h2>Contact</h2>
+            <form id="contact_form">
+                <label>Name:</label>
+                <input type="text" id="name" required>
+                <label>Email:</label>
+                <input type="email" id="email" required>
+                <label>Message:</label>
+                <textarea  id="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+        <section id="Posts">
+            <h2>Posts</h2>
+            <article>
+                <h3>My first post</h3>
+                <p>I love pizza</p>
+                <button class="likeBtn">Like</button>
+                <span>0 likes</span> <!--span tags make it so the tag won't go to a new line-->
+            </article>
+            <article>
+                <h3>My first post</h3>
+                <p>I love cheese</p>
+                <button class="likeBtn">Like</button>
+                <span>0 likes</span>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>2024 my personal site</p>
+    </footer>
+<div id="popup" class="popup">
+    <span class="close">&times;</span>
+    <img src="yuki1.jpeg" alt="Popup Image" class="popup-content">
+</div>
+</body>
+<script src="script.js"></script>
+
+</html>
